@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Tree {
     public double average() {
         if (this.is_empty()) {
@@ -38,7 +40,7 @@ public class Tree {
                 return false;
             }
 
-            return this._subtrees == tree._subtrees;
+            return Arrays.deepEquals(this._subtrees, tree._subtrees);
         }
     }
 }
